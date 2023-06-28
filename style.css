@@ -1,5 +1,5 @@
 *{
-    margin: 0pc;
+    margin: 0px;
     border: 0px;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -10,7 +10,50 @@ body{
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
+    background: linear-gradient(#020024, #271f7e, #00d4ff);
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 5px 10pxrgba(0, 0, 0, 0.5);
+    position: absolute;
+
+    transform: translateY(0deg);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+
+.frontphoto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+    max-width: 400px;
+    width: 100%;
+    height: 395px;
+    border-radius: 25px;
+    padding: 10px;
 }
 
 .profile-card{
@@ -23,7 +66,9 @@ body{
     border-radius: 25px;
     padding: 25px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    position: relative;
+    position: absolute;
+    
+    transform: rotateY(180deg)
 }
 .profile-card::before{
     content: "";
@@ -36,6 +81,13 @@ body{
     border-radius: 24px 24px 0 0;
 }
 
+.wrapper:hover > .frontface{
+    transform: rotateY(-180deg);
+}
+.wrapper:hover > .profile-card{
+    transform: rotateY(0deg);
+}
+
 .image{
     position: relative;
     height: 150px;
@@ -45,7 +97,7 @@ body{
     padding: 3px;
 }
 
-img{
+.pic{
     height: 100%;
     width: 100%;
     border: 3px solid white;
