@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: rgba(63, 59, 59, 0.808); */
+    background: url(./assets/stock-vector-application-of-smartphone-with-business-graph-and-analytics-data-on-isometric-mobile-phone-1583248045-transformed.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.container{
+    max-width: 900px;
+    margin: auto;
+    margin-top: 105px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 1);
+}
+
+.container h1{
+    max-width: 420px;
+    margin: auto;
+    padding-top: 10px;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+}
+
+h1 > span{
+    font-size: 25px;
+}
+
+.form-container{
+    padding: 50px;
+    padding-top: 35px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* grid-template-columns: 1fr 1fr; */
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.form-control label{
+    padding-left: 7px;
+    font-size: 1.15rem;
+    margin-bottom: 7px;
+}
+
+.form-control select, input, textarea{
+    padding: 5px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid rgb(16, 1, 29);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 1);
+}
+
+.form-control input:focus, select:focus, #textarea textarea:focus{
+    outline-color: rgb(97, 115, 214);
+}
+
+.form-control #job_role option {
+    background-color: rgb(76, 41, 133);
+}
+
+#textarea{
+    grid-column: span 2;
+}
+
+.form-control ::placeholder{
+    padding: 25px;
+    font-size: 0.95rem;
+}
+
+.form-control #resume ::placeholder{
+    margin-left: 15px;
+}
+
+::-webkit-file-upload-button{
+    border: none;
+    background-color: transparent;
+}
+
+.button-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+.button-container button{
+    font-size: large;
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 1);
+    padding: 10px;
+    border-radius: 25px;
+}
+.button-container #submit{
+    background: rgb(105, 22, 105);
+    width: 200px;
+}
+.button-container #reset{
+    background: rgb(83, 64, 250);
+    width: 200px;
+}
+.button-container #submit:hover, #reset:hover{
+    background-color: rgb(102, 17, 172);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* .button-container{
+    margin-top: 15px;
+    max-width: 900px;
+}
+.button-container > #submit{
+    display: block;
+    max-width: 100px;
+    margin: auto;
+}
+.button-container > #reset{
+    display: block;
+    max-width: 100px;
+    margin: auto;
+} */

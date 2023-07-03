@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Job</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Job Application
+            <span>(Web)</span>
+        </h1>
+        <form action="">
+            <div class="form-container">
+                <div class="form-control">
+                    <label for="fname">First Name: </label>
+                    <input type="text" name="first_name" id="fname" placeholder="Enter your first name">
+                </div>
+
+                <div class="form-control">
+                    <label for="lname">Last Name: </label>
+                    <input type="text" name="last_name" id="lname" placeholder="Enter your last name">
+                </div>
+
+                <div class="form-control">
+                    <label for="mail">email: </label>
+                    <input type="email" name="email" id="mail" placeholder="Enter your email">
+                </div>
+
+                <div class="form-control">
+                    <label for="job_role">Job Role: </label>
+                    <select name="job_role" id="job_role">
+                        <option value="">Select job role</option>
+                        <option value="Frontend Dev">Frontend Developer</option>
+                        <option value="Backend Dev">Backend Developer</option>
+                        <option value="Fullstack">Fullstack Developer</option>
+                        <option value="UI-UX">UI-UX</option>
+                    </select>
+                </div>
+
+                <div class="form-control" id="textarea">
+                    <label for="address">Address: </label>
+                    <textarea name="address" id="address" cols="1" rows="3" placeholder="Enter your address"></textarea>
+                </div>
+
+                <div class="form-control">
+                    <label for="city">City: </label>
+                    <input type="text" name="city" id="city" placeholder="Enter your city">
+                </div>
+
+                <div class="form-control">
+                    <label for="PIN">PIN : </label>
+                    <input type="number" name="PIN CODE" id="PIN" placeholder="Enter Your PIN CODE">
+                </div>
+
+                <div class="form-control">
+                    <label for="b'date">DOB: </label>
+                    <input type="date" name="bdate" id="b'date" value="2023-07-03">
+                </div>
+
+                <div class="form-control">
+                    <label for="resume">Upload Resume: </label>
+                    <input type="file" name="resume" id="resume">
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="submit" id="submit">Apply Now</button>
+                <button type="reset" id="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
