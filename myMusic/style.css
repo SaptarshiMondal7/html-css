@@ -1,0 +1,309 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+#music{
+    scroll-margin: 50px;
+}
+
+header{
+    /* Always use header and if a different color is to be given then use on this element */
+    background-color: rgb(102, 9, 102);
+
+    /* To make the header stick always at the top we use position: sticky
+    Now we align it from top by 0 */
+
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 1.5);
+}
+
+header .navi{
+    /* If color is given to this element then max-width can't be used.
+    Max-width leaves space in the front and back */
+
+    max-width: 1600px;
+
+    /* Max-width sets a width to the element but to bring it in the center, 
+    we use 'margin 0 auto' O for up, down and auto for left, right  */
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header .navi .logo{
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .navi ul a{
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+
+    /* When we use hover effect then the text moves up a little bit.
+    To not make the text move up the below border which is transparent can be given from before-hand */
+
+    border-bottom: 2px solid transparent;
+    padding: 5px;
+}
+
+header .navi ul a:hover{
+    border-bottom: 2px solid white;
+    border-radius: 25px;
+    background-color: blueviolet;
+    transition: 0.3s ease-in-out;
+}
+
+#hero{
+    background-image: url(./assets/pxfuel.jpg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    color: white;
+    padding: 50px;
+}
+
+.container h1{
+    font-size: 96px;
+}
+
+.container h3{
+    font-size: 32px;
+    text-align: center;
+}
+
+.container p{
+    font-size: 16px;
+    text-align: center;
+}
+
+#music{
+    background: rgb(50, 4, 94);
+
+}
+
+#music button{
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 2px 3px 4px rgba(1, 1, 1, 1.5);
+    background: rgba(182, 45, 68, 0.877);
+    font-weight: 700;
+    color: white;
+}
+
+#music button:hover{
+    transform: scale(1.05);
+    opacity: 0.8;
+    transition: 0.5s ease-in-out;
+}
+
+#music img{
+    
+    /* The image had to be kept between 2 sections.
+    For this first the position of the image was made relative to its parent's position.
+    Next it was shifted down by 400px.
+    Next the gap that was there between the image and the last para was reduced by keeping the top-margin: -400px */
+
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+
+#about{
+    margin-top: 500px;
+}
+
+#about > .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    color: black;
+    padding: 50px;
+}
+
+#about > .container h3{
+    font-size: 32px;
+    text-align: center;
+}
+
+#about .container p{
+    font-size: 16px;
+    text-align: center;
+}
+
+#about button{
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 2px 3px 4px rgba(1, 1, 1, 1.5);
+    background: rgba(84, 9, 114, 0.877);
+    font-weight: 700;
+    color: white;
+}
+
+#about button:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+    transition: 0.5s ease-in-out;
+}
+
+#video{
+    height: 1130px;
+}
+
+#video video{
+    position: absolute;
+    top: 0px;
+    /* right: 0; */
+    /* bottom: 0; */
+    height: 1080px;
+    z-index: -1;
+}
+
+@media(min-width: 16/9){
+    video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width: 16/9){
+    video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+/* #video {
+    padding-top: 0px;
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+} */
+
+#video .container h3{
+    margin-top: 480px;
+    color: black;
+}
+
+#video .container p{
+    color: rgb(0, 0, 0);
+}
+
+#giftcard{
+    padding: 150px 150px 150px;
+    padding-bottom: 0px;
+}
+
+#giftcard .gift-container{
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+}
+
+.giftcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.giftcontent h3{
+    font-size: 3em;
+}
+
+.thirdbtn{
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    box-shadow: 2px 3px 4px rgba(1, 1, 1, 1.5);
+    background: rgba(84, 9, 114, 0.877);
+    font-weight: 700;
+    color: white;
+    width: 100px;
+}
+
+.thirdbtn:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+    transition: 0.5s ease-in-out;
+}
+
+footer{
+    background: rgb(8, 8, 114);
+    color: white;
+}
+
+footer .up{
+    padding: 15px;
+}
+
+footer .up .footer-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+footer .up .footer-container .footerlinks{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+footer .up .footer-container .footerlinks h3{
+    border-bottom: 1px solid white;
+    margin-bottom: 15px;
+}
+
+footer .up .footer-container .footerlinks li{
+    font-size: 0.7em;
+}
+
+footer .up .footer-container .footerlinks ul{
+    list-style: none;
+}
+
+footer .down .footer-container{
+    background-color: rgb(2, 2, 37);
+    padding: 17px;
+    text-align: center;
+}
+
+#hero, #video{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;           
+}
