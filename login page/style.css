@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background: url(./assets/4K-Travel-Wallpaper.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formsection{
+    border-radius: 25px;
+    padding: 15px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formsection .inputbox{
+    position: relative;
+    border-bottom: 2px solid grey;
+    margin: 30px 0;
+}
+
+.formsection .inputbox input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+    color: #adadad;
+}
+
+.formsection .inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #adadad;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.formsection .inputbox input:focus ~ label,
+.formsection .inputbox input:valid ~ label
+{
+    transform: translateY(-50px);
+    color: rgb(124, 124, 214);
+}
+
+.rem{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 30px;
+}
+
+.rem a{
+    margin-left: 5px ;
+    border-left: 1px solid black;
+    padding-left: 10px;
+}
+
+.log{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.log button{
+    padding: 10px 35%;
+    border-radius: 25px;
+    background: transparent;
+    color: wheat;
+    font-size: 1.2em;
+    box-shadow: 3px 4px 5px rgba(1, 1, 1, 5);
+}
+
+.new{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new p{
+    color: #adadad;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.new button {
+    padding: 10px 15%;
+    border-radius: 25px;
+    background: transparent;
+    color: wheat;
+    font-size: .7em;
+    box-shadow: 3px 4px 5px rgba(1, 1, 1, 5);
+}
+
+.new  a{
+    color: wheat;
+}
