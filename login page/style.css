@@ -9,7 +9,7 @@ html, body{
 }
 
 .container{
-    background: url(./assets/4K-Travel-Wallpaper.jpg);
+    background: url(/assets/4K-Travel-Wallpaper.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +17,7 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: change 20s infinite ease-in-out;
 }
 
 .formsection{
@@ -115,4 +116,30 @@ html, body{
 
 .new  a{
     color: wheat;
+}
+
+@keyframes change{
+    0%{
+        background: url(./assets/wallpaperflare.com_wallpaper\ \(4\).jpg);
+    }
+
+    20%{
+        background: url(./assets/wallpaperflare.com_wallpaper.jpg);
+    }
+
+    40%{
+        background: url(./assets/wallpaperflare.com_wallpaper\ \(1\).jpg);
+    }
+
+    60%{
+        background: url(./assets/wallpaperflare.com_wallpaper\ \(2\).jpg);
+    }
+
+    80%{
+        background: url(./assets/wallpaperflare.com_wallpaper\ \(3\).jpg);
+    }
+
+    100%{
+        background: url(./assets/wallpaperflare.com_wallpaper\ \(4\).jpg);
+    }
 }
